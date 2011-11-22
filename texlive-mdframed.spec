@@ -1,11 +1,11 @@
-# revision 24247
+# revision 24594
 # category Package
 # catalog-ctan /macros/latex/contrib/mdframed
-# catalog-date 2011-10-09 16:42:04 +0200
+# catalog-date 2011-11-14 19:03:15 +0100
 # catalog-license lppl
-# catalog-version 0.9h
+# catalog-version 1.0
 Name:		texlive-mdframed
-Version:	0.9h
+Version:	1.0
 Release:	1
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
@@ -42,17 +42,23 @@ breakable framed and coloured boxes.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/tex/latex/mdframed/ltxmdf.cls
 %{_texmfdistdir}/tex/latex/mdframed/md-frame-0.mdf
 %{_texmfdistdir}/tex/latex/mdframed/md-frame-1.mdf
+%{_texmfdistdir}/tex/latex/mdframed/md-frame-2.mdf
 %{_texmfdistdir}/tex/latex/mdframed/md-frame-3.mdf
-%{_texmfdistdir}/tex/latex/mdframed/md-framepre-0.mdf
-%{_texmfdistdir}/tex/latex/mdframed/md-framepre-1.mdf
-%{_texmfdistdir}/tex/latex/mdframed/md-framepre-3.mdf
 %{_texmfdistdir}/tex/latex/mdframed/mdframed.sty
-%{_texmfdistdir}/tex/latex/mdframed/mdframedpre.sty
 %doc %{_texmfdistdir}/doc/latex/mdframed/README
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-doc-en.pdf
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-doc-en.tex
+%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-default.pdf
+%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-default.tex
+%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-pstricks.pdf
+%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-pstricks.tex
+%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-texsx.pdf
+%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-texsx.tex
+%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-tikz.pdf
+%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-tikz.tex
 %doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
