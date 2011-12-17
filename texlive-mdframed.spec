@@ -1,11 +1,11 @@
-# revision 24594
+# revision 24844
 # category Package
 # catalog-ctan /macros/latex/contrib/mdframed
-# catalog-date 2011-11-14 19:03:15 +0100
+# catalog-date 2011-12-14 01:11:37 +0100
 # catalog-license lppl
-# catalog-version 1.0
+# catalog-version 1.0c
 Name:		texlive-mdframed
-Version:	1.0
+Version:	1.0c
 Release:	1
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
@@ -17,27 +17,27 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package develops the facilities of framed in providing
-breakable framed and coloured boxes.
+breakable framed and coloured boxes. The user may instruct the
+package to perform its operations using default LaTeX commands,
+PStricks or TikZ.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -48,9 +48,9 @@ breakable framed and coloured boxes.
 %{_texmfdistdir}/tex/latex/mdframed/md-frame-2.mdf
 %{_texmfdistdir}/tex/latex/mdframed/md-frame-3.mdf
 %{_texmfdistdir}/tex/latex/mdframed/mdframed.sty
-%doc %{_texmfdistdir}/doc/latex/mdframed/README
-%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-doc-en.pdf
-%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-doc-en.tex
+%doc %{_texmfdistdir}/doc/latex/mdframed/Makefile
+%doc %{_texmfdistdir}/doc/latex/mdframed/README.txt
+%doc %{_texmfdistdir}/doc/latex/mdframed/donald-duck.jpg
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-default.pdf
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-default.tex
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-pstricks.pdf
@@ -59,6 +59,7 @@ breakable framed and coloured boxes.
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-texsx.tex
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-tikz.pdf
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-tikz.tex
+%doc %{_texmfdistdir}/doc/latex/mdframed/mdframed.pdf
 %doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
