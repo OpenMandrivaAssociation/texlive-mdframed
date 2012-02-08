@@ -1,11 +1,11 @@
-# revision 25091
+# revision 25299
 # category Package
 # catalog-ctan /macros/latex/contrib/mdframed
-# catalog-date 2012-01-10 17:14:00 +0100
+# catalog-date 2012-02-05 17:55:30 +0100
 # catalog-license lppl
-# catalog-version 1.2a
+# catalog-version 1.3a
 Name:		texlive-mdframed
-Version:	1.2a
+Version:	1.3a
 Release:	1
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
@@ -13,6 +13,7 @@ URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mdframed
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.doc.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.source.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -51,13 +52,18 @@ PStricks or TikZ.
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-tikz.pdf
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-tikz.tex
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed.pdf
+#- source
+%doc %{_texmfdistdir}/source/latex/mdframed/Makefile
+%doc %{_texmfdistdir}/source/latex/mdframed/mdframed.dtx
+%doc %{_texmfdistdir}/source/latex/mdframed/mdframed.ins
+%doc %{_texmfdistdir}/source/latex/mdframed/mdframedmake.bat
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%setup -c -a0 -a1 -a2
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
