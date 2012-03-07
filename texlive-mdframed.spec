@@ -1,11 +1,11 @@
-# revision 25299
+# revision 25560
 # category Package
 # catalog-ctan /macros/latex/contrib/mdframed
-# catalog-date 2012-02-05 17:55:30 +0100
+# catalog-date 2012-03-04 18:28:13 +0100
 # catalog-license lppl
-# catalog-version 1.3a
+# catalog-version 1.4
 Name:		texlive-mdframed
-Version:	1.3a
+Version:	1.4
 Release:	1
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
@@ -41,7 +41,7 @@ PStricks or TikZ.
 %{_texmfdistdir}/tex/latex/mdframed/md-frame-2.mdf
 %{_texmfdistdir}/tex/latex/mdframed/md-frame-3.mdf
 %{_texmfdistdir}/tex/latex/mdframed/mdframed.sty
-%doc %{_texmfdistdir}/doc/latex/mdframed/README.txt
+%doc %{_texmfdistdir}/doc/latex/mdframed/README
 %doc %{_texmfdistdir}/doc/latex/mdframed/donald-duck.jpg
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-default.pdf
 %doc %{_texmfdistdir}/doc/latex/mdframed/mdframed-example-default.tex
