@@ -1,11 +1,11 @@
-# revision 25884
+# revision 27127
 # category Package
 # catalog-ctan /macros/latex/contrib/mdframed
-# catalog-date 2012-04-08 14:50:51 +0200
+# catalog-date 2012-06-03 22:54:07 +0200
 # catalog-license lppl
-# catalog-version 1.5
+# catalog-version 1.6b
 Name:		texlive-mdframed
-Version:	1.5
+Version:	1.6b
 Release:	1
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
