@@ -1,11 +1,11 @@
-# revision 27127
+# revision 27762
 # category Package
 # catalog-ctan /macros/latex/contrib/mdframed
-# catalog-date 2012-06-03 22:54:07 +0200
+# catalog-date 2012-09-21 10:33:40 +0200
 # catalog-license lppl
-# catalog-version 1.6b
+# catalog-version 1.6d
 Name:		texlive-mdframed
-Version:	1.6b
+Version:	1.6d
 Release:	1
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
@@ -70,6 +70,10 @@ cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
 
 
 %changelog
+* Tue Oct 30 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6d-1
++ Revision: 820739
+- Update to latest release.
+
 * Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6b-1
 + Revision: 812576
 - Update to latest release.
