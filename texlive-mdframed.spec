@@ -6,7 +6,7 @@
 # catalog-version 1.9b
 Name:		texlive-mdframed
 Version:	1.9b
-Release:	9
+Release:	10
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mdframed
