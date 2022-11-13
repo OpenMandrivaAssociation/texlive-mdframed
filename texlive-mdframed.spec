@@ -1,19 +1,13 @@
-# revision 31075
-# category Package
-# catalog-ctan /macros/latex/contrib/mdframed
-# catalog-date 2013-07-02 00:01:05 +0200
-# catalog-license lppl
-# catalog-version 1.9b
 Name:		texlive-mdframed
-Version:	1.9b
-Release:	10
+Version:	31075
+Release:	1
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mdframed
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ package to perform its operations using default LaTeX commands,
 PStricks or TikZ.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -60,7 +54,8 @@ PStricks or TikZ.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
