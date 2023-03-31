@@ -1,6 +1,6 @@
 Name:		texlive-mdframed
 Version:	31075
-Release:	1
+Release:	2
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mdframed
