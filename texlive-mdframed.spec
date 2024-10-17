@@ -3,7 +3,7 @@ Version:	31075
 Release:	2
 Summary:	Framed environments that can split at page boundaries
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/mdframed
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/mdframed
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/mdframed.doc.r%{version}.tar.xz
